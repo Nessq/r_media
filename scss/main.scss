@@ -29,11 +29,13 @@ $trns: 0.45s cubic-bezier(0.37, 0.8, 0.41, 1.27);
 
 // configuration
 html {
+  height: 100%;
 }
 body {
   font-family: $font;
   font-weight: 400;
   color: $color-primary;
+  height: 100%;
 }
 
 img {
@@ -79,10 +81,12 @@ img {
 .site {
   overflow: hidden;
 }
-
+.content{
+  height: 100%;
+}
 .menu-items {
   display: flex;
-  height: 100vh;
+  height: 100%;
   gap: 1px;
 }
 
