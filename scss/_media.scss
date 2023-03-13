@@ -36,8 +36,11 @@
     padding-top: 0;
     // margin-top: vwm(40px);
     &[data-indx='3']{
-      img{
-        padding-top: vwm(22px);
+      .detail-item__image{
+
+        img{
+          padding-top: vwm(22px);
+        }
       }
     }
   }
