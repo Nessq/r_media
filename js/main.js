@@ -25,6 +25,7 @@ for (const item of menuItems) {
     const bodyClasses = ['open-detail'];
     dataIndx % 2 === 0 && bodyClasses.push('reverse');
     document.body.classList.add(...bodyClasses);
+    detailItem.scrollTo(0,0);
     detailItem.classList.add('active');
   });
 }
