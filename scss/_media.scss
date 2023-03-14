@@ -41,14 +41,16 @@
       }
     }
     // margin-top: vwm(40px);
-    // &[data-indx='3']{
-    //   .detail-item__image{
+    &[data-indx='4']{
+      .detail-item__image{
 
-    //     img{
-    //       padding-top: vwm(22px);
-    //     }
-    //   }
-    // }
+        img{
+          position: relative;
+          top: -17vw;
+          margin-bottom: -30vw;
+        }
+      }
+    }
   }
   .detail-item__image {
     padding: 0 vwm(20px);
