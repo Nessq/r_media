@@ -41,17 +41,18 @@
       }
     }
     // margin-top: vwm(40px);
-    &[data-indx='3']{
-      .detail-item__image{
+    // &[data-indx='3']{
+    //   .detail-item__image{
 
-        img{
-          padding-top: vwm(22px);
-        }
-      }
-    }
+    //     img{
+    //       padding-top: vwm(22px);
+    //     }
+    //   }
+    // }
   }
   .detail-item__image {
     padding: 0 vwm(20px);
+    padding-top: vwm(45px);
   }
   .detail-item__content {
     display: flex;
