@@ -34,6 +34,12 @@
     gap: 0;
     overflow-y: auto;
     padding-top: 0;
+
+    &[data-indx='1']{
+      .detail-item__image{
+        padding: 0;
+      }
+    }
     // margin-top: vwm(40px);
     &[data-indx='3']{
       .detail-item__image{
@@ -104,14 +110,21 @@
         transparent 13%,
         $color-divider 13%,
         transparent calc(13% + 1px),
-        transparent 44%,
-        $color-divider 44%,
-        transparent calc(44% + 1px),
-        transparent 85%,
-        $color-divider 85%,
-        transparent calc(85% + 1px),
         transparent,
       );
+      // background: linear-gradient(
+      //   to bottom,
+      //   transparent 13%,
+      //   $color-divider 13%,
+      //   transparent calc(13% + 1px),
+      //   transparent 44%,
+      //   $color-divider 44%,
+      //   transparent calc(44% + 1px),
+      //   transparent 85%,
+      //   $color-divider 85%,
+      //   transparent calc(85% + 1px),
+      //   transparent,
+      // );
     }
   }
   @keyframes grider {
