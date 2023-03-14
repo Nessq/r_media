@@ -25,7 +25,6 @@ for (const item of menuItems) {
     const bodyClasses = ['open-detail'];
     dataIndx % 2 === 0 && bodyClasses.push('reverse');
     document.body.classList.add(...bodyClasses);
-    detailItem.scrollTo(0,1);
     detailItem.scrollTo(0,0);
     detailItem.classList.add('active');
   });
@@ -39,6 +38,7 @@ for(const item of closeDetailItems) {
     gridLoaded(dataIndx % 2 === 0 ? 'left' : 'right');
     document.body.classList.remove('open-detail', 'reverse');
     detailItem.classList.remove('active');
+    header.classList.remove('bg');
   });
 }
 
