@@ -131,6 +131,7 @@
   .nav{
     gap: vwm(20px);
     padding: vwm(40px) vwm(20px);
+    padding-top: vwm(80px);
   }
   .header-link{
     font-size: vwm(20px);
@@ -155,6 +156,12 @@
     width: vwm(25px);
     cursor: pointer;
   }
+  .logo{
+    z-index: 10;
+  }
+  .menu-btn{
+    z-index: 10;
+  }
   .nav{
     transition: 0.25s ease-in-out;
     display: block;
@@ -162,7 +169,8 @@
     transform: translateY(-50%);
     visibility: hidden;
     position: absolute;
-    top: vwm(40px);
+    // top: vwm(40px);
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
@@ -183,6 +191,12 @@
     .header{
       transition-delay: 0s;
       transition-duration: 0.15s;
+    }
+  }
+  body.open-detail{
+    .header.bg{
+      background-color: rgba(255,255,255,0.6);
+      backdrop-filter: blur(4px);
     }
   }
   body.mobile-menu-open{

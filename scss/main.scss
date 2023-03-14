@@ -98,8 +98,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
-  @media (hover: hover) {
+  @media (hover: hover) and (min-width: 768px) {
     &:hover {
       cursor: pointer;
       .menu-item__title {
@@ -304,7 +305,7 @@ img {
     font-weight: 700;
     border-radius: vw(50px);
     transition: all 0.3s ease-in-out;
-    @media (hover: hover) {
+    @media (hover: hover) and (min-width: 768px) {
       &:hover {
         background-color: $color-accent;
         border-color: $color-accent;

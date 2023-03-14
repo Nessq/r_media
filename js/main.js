@@ -25,6 +25,7 @@ for (const item of menuItems) {
     const bodyClasses = ['open-detail'];
     dataIndx % 2 === 0 && bodyClasses.push('reverse');
     document.body.classList.add(...bodyClasses);
+    detailItem.scrollTo(0,1);
     detailItem.scrollTo(0,0);
     detailItem.classList.add('active');
   });
@@ -68,3 +69,14 @@ function gridLoaded(direction){
 }
 
 initSite();
+
+
+for(const item of detailItems){
+
+  item.addEventListener('scroll', (e)=>{
+    if(e.target.classList.contains('active') && window.innerWidth <= 767){
+      e.target.scrollTop > 10 ? header.classList.add('bg') : header.classList.remove('bg');
+    }
+  })
+
+}
