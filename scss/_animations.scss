@@ -66,7 +66,8 @@
   &:nth-child(5) {
     .menu-item__title {
       span:last-child {
-        top: 54%;
+        top: 50%;
+        // font-size: 6vh;
       }
     }
     .menu-item__image {
@@ -78,6 +79,7 @@
         position: relative;
         left: -6%;
         top: 1.5%;
+        max-height: 85vh;
       }
     }
   }

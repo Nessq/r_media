@@ -2,6 +2,7 @@
 const loader = document.querySelector('.loader');
 const header = document.querySelector('.header');
 const site = document.querySelector('.site');
+const logo = document.querySelector('.logo');
 
 const menuItems = document.querySelectorAll('.menu-item');
 const detailItems = document.querySelectorAll('.detail-item');
@@ -29,6 +30,11 @@ for (const item of menuItems) {
     detailItem.classList.add('active');
   });
 }
+
+logo.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('.detail-item.active .detail-item__back').click();
+});
 
 for(const item of closeDetailItems) {
   

@@ -36,8 +36,17 @@ body {
   font-weight: 400;
   color: $color-primary;
   height: 100%;
-}
 
+  &.open-detail{
+    .logo{
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+}
+.logo{
+  pointer-events: none;
+}
 img {
   max-width: 100%;
 }
